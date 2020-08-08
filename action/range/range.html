@@ -4,12 +4,13 @@
     </head>
 
     <body>
-        {{range .}}
-        遍历到的元素是：
-        {{.}}<br>
+        {{range .}} <!-- From the background -->
+        <br>
+            遍历到的元素是：
+            {{.}}
         <a href = "#">{{.LastName}}</a>
         {{else}}
-        没有遍历到任何元素
+            没有遍历到任何元素
         {{end}}
     </body>
 </html>
